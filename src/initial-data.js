@@ -5,19 +5,19 @@ const initialData = {
   columns: [
     {
       type: 'init',
-      title: '准备中',
+      title: '已规划的任务',
       taskIds: jsonData.list.filter(o => o.level === 0).map(o => o.id),
       order: 0,
     },
     {
       type: 'progress',
-      title: '执行中',
+      title: '执行中的任务',
       taskIds: jsonData.list.filter(o => o.level === 1).map(o => o.id),
       order: 1,
     },
     {
       type: 'done',
-      title: '已完成',
+      title: '已完成的任务',
       taskIds: jsonData.list.filter(o => o.level === 2).map(o => o.id),
       order: 2,
     },
